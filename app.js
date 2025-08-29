@@ -46,3 +46,57 @@ function withdraw(){let getName = document.getElementById('accountHolderName').v
   
 }
 
+
+
+
+
+// another code 
+/*
+ const accounts = new Map();
+
+    function createAccount() {
+      let getName = document.getElementById('accountHolderName').value;
+      let getAccountNumber = document.getElementById('accountNo').value;
+      let getBalance = Number(document.getElementById('initialBalance').value);
+
+      accounts.set(getAccountNumber, { Name: getName, Balance: getBalance });
+      displayAccounts();
+    }
+
+    function deposit() {
+      let getAccountNumber = document.getElementById('accountNo').value;
+      let add = Number(document.getElementById('addBalance').value);
+
+      if (accounts.has(getAccountNumber)) {
+        accounts.get(getAccountNumber).Balance += add;
+      } else {
+        alert("Account not found!");
+      }
+      displayAccounts();
+    }
+
+    function withdraw() {
+      let getAccountNumber = document.getElementById('accountNo').value;
+      let withdrawAmount = Number(document.getElementById('withdraw').value);
+
+      if (accounts.has(getAccountNumber)) {
+        let account = accounts.get(getAccountNumber);
+        if (account.Balance >= withdrawAmount) {
+          account.Balance -= withdrawAmount;
+        } else {
+          alert("Insufficient Balance!");
+        }
+      } else {
+        alert("Account not found!");
+      }
+      displayAccounts();
+    }
+
+    function displayAccounts() {
+      let output = '';
+      accounts.forEach((item, val) => {
+        output += `<p><b>Account:</b> ${val} | <b>Name:</b> ${item.Name} | <b>Balance:</b> ${item.Balance}</p>`;
+      });
+      document.getElementById('ul').innerHTML = output || "No accounts yet...";
+    }
+*/
