@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple bank app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h2>Mini Banking System</h2>
+
+    <div class="form-group">
+      <input type="text" id="accountHolderName" placeholder="Enter account holder name">
+    </div>
+
+    <div class="form-group">
+      <input type="text" id="accountNo" placeholder="Enter account number">
+    </div>
+
+    <div class="form-group">
+      <input type="text" id="initialBalance" placeholder="Enter initial balance">
+    </div>
+
+    <button onclick="createAccount()">Create Account</button>
+
+    <div class="form-group">
+      <input type="text" id="addBalance" placeholder="Deposit amount">
+      <button onclick="deposit()">Deposit</button>
+    </div>
+
+    <div class="form-group">
+      <input type="text" id="withdraw" placeholder="Withdraw amount">
+      <button onclick="withdraw()">Withdraw</button>
+    </div>
+
+    <div class="output" id="ul">No accounts yet...</div>
+  </div>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
